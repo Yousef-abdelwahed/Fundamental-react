@@ -1,0 +1,37 @@
+.color-hex-max {
+  color: bisque;
+}
+.submit-btn {
+  letter-spacing: 3px;
+  width: 7rem;
+}
+.color-form {
+  display: flex;
+}
+input[type="text"] {
+  border-color: transparent;
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  max-width: 200px;
+}
+input[type="color"] {
+  /* height: 100%; */
+  background-color: var(--white);
+  border-color: var(--white);
+}
+@media screen and (min-width: 768px) {
+  .container {
+    grid-template-columns: auto 1fr;
+    column-gap: 2rem;
+    align-items: center;
+  }
+  .color-form {
+    height: 40px;
+  }
+  .color-list {
+    padding: 2rem;
+  }
+}
+.color-list {
+  padding: 1rem;
+}

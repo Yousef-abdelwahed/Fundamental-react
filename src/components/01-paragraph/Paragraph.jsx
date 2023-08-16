@@ -15,7 +15,7 @@ const Paragraph = () => {
     setText(data.slice(0, amount));
   };
   return (
-    <main>
+ 
       <section>
         <Container>
           <h2 className="text-center mt-3">paragraph generator</h2>
@@ -55,7 +55,7 @@ const Paragraph = () => {
           </Form>
         </Container>
       </section>
-    </main>
+  
   );
 };
 
