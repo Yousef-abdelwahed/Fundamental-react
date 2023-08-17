@@ -71,7 +71,7 @@ body {
   color: var(--textColor);
 }
 section {
-  height: 100vh;
+  /* height: 90vh; */
 }
 p {
   margin: 0;
