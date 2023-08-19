@@ -9,10 +9,11 @@
   padding: 2rem;
   box-shadow: var(--shadow-1);
   transition: var(--transition);
+  background-color: rgba(38, 38, 38, 0.755);
 }
 .section-center:hover {
   /* box-shadow: var(--shadow-3); */
-  filter: drop-shadow(0 0 2em #64ff69aa);
+  filter: drop-shadow(0 0 1em #3e3e3e75);
 }
 .item-name {
   text-transform: capitalize;
@@ -21,8 +22,11 @@
   padding: 1rem;
   border-radius: 5px;
   border: 1px solid #dddddd;
-  background-color: lightgray;
+  /* background-color: lightgray; */
 }
 .item:hover {
-  box-shadow: var(--shadow-1);
+  /* box-shadow: var(--shadow-1); */
+}
+input[type="text"] {
+  width: 100% !important;
 }

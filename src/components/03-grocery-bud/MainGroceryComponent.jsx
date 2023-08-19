@@ -54,7 +54,7 @@ const MainGroceryComponent = () => {
   };
   return (
     <>
-      <ToastContainer position={"top-center"} />
+      <ToastContainer position={"top-right"} />
       <section className="section-center">
         <FormGrocery addItems={addItems} />
         <Items items={items} removeItem={removeItem} editItem={editItem} />

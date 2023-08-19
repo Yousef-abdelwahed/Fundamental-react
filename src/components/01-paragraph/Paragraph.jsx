@@ -1,5 +1,6 @@
-import { Row, Container, Col, FormGroup, Button } from "react-bootstrap";
+import { Row, Container, Button } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
+import InputGroup from "react-bootstrap/InputGroup";
 
 import "./paragraphStyle.css";
 import { useState } from "react";
@@ -15,18 +16,14 @@ const Paragraph = () => {
     setText(data.slice(0, amount));
   };
   return (
- 
-      <section>
-        <Container>
-          <h2 className="text-center mt-3">paragraph generator</h2>
-          <Form onSubmit={handleForm}>
-            <Row className="mt-5">
-              <FormGroup as={Col} className="text-end ">
-                <Form.Label className="lh-base fw-bold fs-4">
-                  Paragraph
-                </Form.Label>
-              </FormGroup>
-              <FormGroup as={Col} md={1}>
+    <section>
+      <Container>
+        <Form onSubmit={handleForm}>
+          <Row className="mt-5">
+            <label className="lh-base fw-bold my-2  ">Paragraph</label>
+
+            <InputGroup className="mb-3">
+              <InputGroup.Text id="basic-addon1">
                 <Form.Control
                   type="number"
                   name="amount"
@@ -34,28 +31,30 @@ const Paragraph = () => {
                   min="1"
                   step="1"
                   max="8"
-                  className="fw-bold fs-5"
+                  className="fw-bold fs-5 w-100"
                   value={count}
                   onChange={(e) => setCount(e.target.value)}
+                  style={{ width: "50rem" }}
                 />
-              </FormGroup>
-              <FormGroup as={Col}>
-                <Button type="submit">Generate</Button>
-              </FormGroup>
-              <article className="text-center ">
-                {text.map((el) => {
-                  return (
-                    <p key={nanoid()} className="mt-3 fs-5 lh-base w-75 m-auto">
-                      {el}
-                    </p>
-                  );
-                })}
-              </article>
-            </Row>
-          </Form>
-        </Container>
-      </section>
-  
+              </InputGroup.Text>
+
+              <Button type="submit" className="">
+                Generate
+              </Button>
+            </InputGroup>
+            <article className="text-center ">
+              {text.map((el) => {
+                return (
+                  <p key={nanoid()} className="mt-3 fs-5 lh-base w-75 m-auto">
+                    {el}
+                  </p>
+                );
+              })}
+            </article>
+          </Row>
+        </Form>
+      </Container>
+    </section>
   );
 };
 

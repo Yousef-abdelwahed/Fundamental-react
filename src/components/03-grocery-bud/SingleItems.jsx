@@ -8,7 +8,7 @@ const SingleItems = ({ item, removeItem, editItem }) => {
   //   };
   console.log(completed);
   return (
-    <Container className="single-item">
+    <Container className="single-item ">
       <div className="item  d-flex flex-row bd-highlight mb-3 justify-content-around align-items-center mt-4 ">
         <Form.Check
           type="checkbox"

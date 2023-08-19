@@ -16,10 +16,10 @@ const FormGrocery = ({ addItems }) => {
     setItemName("");
   };
   return (
-    <Container>
-      <Form onSubmit={handleForm}>
-        <Row>
-          <InputGroup as={Col} md={12} className="flex-nowrap flex-row">
+    <Container fluid>
+      <Form onSubmit={handleForm} className="w-100">
+        <Row className="w-100">
+          <InputGroup as={Col} md={12} className="d-flex  align-items-stretch">
             <Form.Control
               type="text"
               aria-label="Default"
