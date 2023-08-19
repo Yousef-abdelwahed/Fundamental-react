@@ -53,7 +53,7 @@ html {
   --fixed-width: 600px;
 
   /* box shadow*/
-  --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-1: 4px 1px 3px 0 rgb(19, 209, 48), 0 1px 2px 0 rgb(19, 227, 227);
   --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
   --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),

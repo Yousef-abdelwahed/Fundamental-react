@@ -7,9 +7,10 @@ import StepContent from "@mui/material/StepContent";
 import Button from "@mui/material/Button";
 import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
-import MainGroceryComponent from "./components/03-grocery-bud/MainGroceryComponent";
-import MainColorComponent from "./components/02-Colors/MainColorComponent";
-import Paragraph from "./components/01-paragraph/Paragraph";
+// import MainGroceryComponent from "./components/03-grocery-bud/MainGroceryComponent";
+// import MainColorComponent from "./components/02-Colors/MainColorComponent";
+// import Paragraph from "./components/01-paragraph/Paragraph";
+import MainReview from "./components/04-reviews/MainReview";
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 // import './App.css'
@@ -19,20 +20,24 @@ const steps = [
   {
     label: <h4>review</h4>,
     description: `we have list of items and we want to only display one person at a time,And we also have this option to pick the random one.`,
-    components: <Paragraph />,
+    components: <MainReview />,
   },
   {
     label: <span>paragraph generator</span>,
     description: `For each ad campaign that you create, you can control how much
               you're willing to spend on clicks and conversions, which networks
               and geographical locations you want your ads to show on, and more.`,
-    components: <Paragraph />,
+    components: "",
+
+    // components: <Paragraph />,
   },
   {
     label: "Create an ad group",
     description:
       "An ad group contains one or more ads which target a shared set of keywords.",
-    components: <MainColorComponent />,
+    components: "",
+
+    // components: <MainColorComponent />,
   },
   {
     label: "Create an ad",
@@ -40,7 +45,9 @@ const steps = [
               and learn how to enhance your ads using features like ad extensions.
               If you run into any problems with your ads, find out how to tell if
               they're running and how to resolve approval issues.`,
-    components: <MainGroceryComponent />,
+    components: "",
+
+    // components: <MainGroceryComponent />,
   },
   {
     label: "Create an ad",
@@ -48,7 +55,8 @@ const steps = [
               and learn how to enhance your ads using features like ad extensions.
               If you run into any problems with your ads, find out how to tell if
               they're running and how to resolve approval issues.`,
-    components: <MainGroceryComponent />,
+    components: "",
+    //  <MainGroceryComponent />,
   },
 ];
 
@@ -90,7 +98,7 @@ const App = () => {
 
                 <StepContent>
                   <Typography>{step.description}</Typography>
-                  <Typography>{step.components}</Typography>
+                  <main>{step.components}</main>
 
                   <Box sx={{ mb: 2 }}>
                     <div>
