@@ -16,7 +16,7 @@ const MainReview = () => {
     if (randomNum === index) {
       randomNum = index + 1;
     }
-    setIndex(checkNumber(randomNum));
+    setIndex(randomNum);
   };
   //
   // const checkNumber = (number) => {
@@ -38,7 +38,7 @@ const MainReview = () => {
   const handlePrev = () => {
     setIndex((currentIndex) => {
       const newIndex = currentIndex - 1 + (reviews.length % reviews.length);
-      return checkNumber(newIndex);
+      return newIndex;
     });
   };
 

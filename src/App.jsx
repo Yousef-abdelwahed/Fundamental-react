@@ -11,12 +11,20 @@ import Typography from "@mui/material/Typography";
 // import MainColorComponent from "./components/02-Colors/MainColorComponent";
 // import Paragraph from "./components/01-paragraph/Paragraph";
 import MainReview from "./components/04-reviews/MainReview";
+import MainQuiz from "./components/03-quiz/MainQuiz";
+import { nanoid } from "nanoid";
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 // import './App.css'
 
 // import React from 'react'
 const steps = [
+  {
+    label: <h4>Quiz</h4>,
+    description: `set up the questions array as a state variable using the useState hook. This will allow you to modify the data and have those changes automatically reflected in the rendered output
+    and use accordion style`,
+    components: <MainQuiz />,
+  },
   {
     label: <h4>review</h4>,
     description: `we have list of items and we want to only display one person at a time,And we also have this option to pick the random one.`,
@@ -81,7 +89,7 @@ const App = () => {
         <Box sx={{ maxWidth: 700 }} className="text-white m-auto">
           <Stepper activeStep={activeStep} orientation="vertical">
             {steps.map((step, index) => (
-              <Step key={step.label}>
+              <Step key={nanoid()}>
                 <span className="text-white">
                   <StepLabel
                     optional={
