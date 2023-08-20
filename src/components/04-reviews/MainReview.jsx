@@ -19,26 +19,25 @@ const MainReview = () => {
     setIndex(checkNumber(randomNum));
   };
   //
-  const checkNumber = (number) => {
-    if (number > reviews.length - 1) {
-      return 0;
-    }
-    if (number < 0) {
-      return reviews.length - 1;
-    }
-    console.log(number);
-    return number;
-  };
+  // const checkNumber = (number) => {
+  //   if (number > reviews.length - 1) {
+  //     return 0;
+  //   }
+  //   if (number < 0) {
+  //     return reviews.length - 1;
+  //   }
+  //   console.log(number);
+  //   return number;
+  // };
   const handleNext = () => {
     setIndex((currentIndex) => {
-      const newIndex = currentIndex + 1;
-
-      return checkNumber(newIndex);
+      const newIndex = (currentIndex + 1) % reviews.length;
+      return newIndex;
     });
   };
   const handlePrev = () => {
     setIndex((currentIndex) => {
-      const newIndex = currentIndex - 1;
+      const newIndex = currentIndex - 1 + (reviews.length % reviews.length);
       return checkNumber(newIndex);
     });
   };
