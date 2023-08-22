@@ -7,7 +7,7 @@ const Questions = ({ questions }) => {
   return (
     <>
       <Container>
-        <Row>
+        <Row className="mb-4">
           <Accordion defaultActiveKey={["0"]} alwaysOpen>
             {questions.map((question, index) => (
               <SingleQuestion

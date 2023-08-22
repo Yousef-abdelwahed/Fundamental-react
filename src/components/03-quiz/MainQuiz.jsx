@@ -9,7 +9,7 @@ const MainQuiz = () => {
   const [questions, setQuestions] = useState(questionData);
   return (
     <section className="quiz-section ">
-      <h2 className="text-dark lh-base font-monospace">questions</h2>
+      <h2 className="text-dark lh-base font-monospace mb-3">questions</h2>
       <article>
         <Questions questions={questions} />
       </article>

@@ -4,7 +4,6 @@ const SingleQuestion = ({ question, index }) => {
   const { title, info } = question;
   return (
     <>
-      {" "}
       <Accordion.Item eventKey={index}>
         <Accordion.Header>{title}</Accordion.Header>
         <Accordion.Body>{info}</Accordion.Body>

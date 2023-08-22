@@ -13,11 +13,13 @@ import Typography from "@mui/material/Typography";
 import MainReview from "./components/04-reviews/MainReview";
 import MainQuiz from "./components/03-quiz/MainQuiz";
 import { nanoid } from "nanoid";
+import MenuMain from "./components/05-menu/MenuMain";
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 // import './App.css'
 
 // import React from 'react'
+
 const steps = [
   {
     label: <h4>Quiz</h4>,
@@ -29,6 +31,11 @@ const steps = [
     label: <h4>review</h4>,
     description: `we have list of items and we want to only display one person at a time,And we also have this option to pick the random one.`,
     components: <MainReview />,
+  },
+  {
+    label: <h4>Menu</h4>,
+    description: ``,
+    components: <MenuMain />,
   },
   {
     label: <span>paragraph generator</span>,
