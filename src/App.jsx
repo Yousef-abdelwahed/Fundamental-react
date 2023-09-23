@@ -7,20 +7,26 @@ import StepContent from "@mui/material/StepContent";
 import Button from "@mui/material/Button";
 import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
-// import MainGroceryComponent from "./components/03-grocery-bud/MainGroceryComponent";
-// import MainColorComponent from "./components/02-Colors/MainColorComponent";
-// import Paragraph from "./components/01-paragraph/Paragraph";
+//
+import { nanoid } from "nanoid";
+//
 import MainReview from "./components/04-reviews/MainReview";
 import MainQuiz from "./components/03-quiz/MainQuiz";
-import { nanoid } from "nanoid";
 import MenuMain from "./components/05-menu/MenuMain";
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-// import './App.css'
 
-// import React from 'react'
+//
+import Paragraph from "./components/08-paragraph/Paragraph";
+import MainColorComponent from "./components/09-Colors/MainColorComponent";
+import MainGroceryComponent from "./components/10-grocery-bud/MainGroceryComponent";
+import TourMainComponent from "./components/02-ToursCard/TourProject/TourMainComponent";
 
 const steps = [
+  {
+    label: <h4>Tours</h4>,
+    description: `set up the questions array as a state variable using the useState hook. This will allow you to modify the data and have those changes automatically reflected in the rendered output
+    and use accordion style`,
+    components: <TourMainComponent />,
+  },
   {
     label: <h4>Quiz</h4>,
     description: `set up the questions array as a state variable using the useState hook. This will allow you to modify the data and have those changes automatically reflected in the rendered output
@@ -38,31 +44,28 @@ const steps = [
     components: <MenuMain />,
   },
   {
-    label: <span>paragraph generator</span>,
+    label: <h4>paragraph generator</h4>,
     description: `For each ad campaign that you create, you can control how much
               you're willing to spend on clicks and conversions, which networks
               and geographical locations you want your ads to show on, and more.`,
-    components: "",
 
-    // components: <Paragraph />,
+    components: <Paragraph />,
   },
   {
-    label: "Create an ad group",
+    label: <h4>Color Generator </h4>,
     description:
       "An ad group contains one or more ads which target a shared set of keywords.",
-    components: "",
 
-    // components: <MainColorComponent />,
+    components: <MainColorComponent />,
   },
   {
-    label: "Create an ad",
+    label: <h4>Grocery</h4>,
     description: `Try out different ad text to see what brings in the most customers,
               and learn how to enhance your ads using features like ad extensions.
               If you run into any problems with your ads, find out how to tell if
               they're running and how to resolve approval issues.`,
-    components: "",
 
-    // components: <MainGroceryComponent />,
+    components: <MainGroceryComponent />,
   },
   {
     label: "Create an ad",
