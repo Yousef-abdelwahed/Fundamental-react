@@ -1,8 +1,6 @@
-
-
-import "./";
+import "./curouselStyle";
 const MainCarousel = () => {
-  return <div>Carousel</div>;
+  return <section className="carousel-section">Carousel</section>;
 };
 
 export default MainCarousel;
