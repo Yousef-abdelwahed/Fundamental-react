@@ -19,32 +19,43 @@ import Paragraph from "./components/08-paragraph/Paragraph";
 import MainColorComponent from "./components/09-Colors/MainColorComponent";
 import MainGroceryComponent from "./components/10-grocery-bud/MainGroceryComponent";
 import TourMainComponent from "./components/02-ToursCard/TourProject/TourMainComponent";
+import MainCarousel from "./components/07-sliders/MainCarousel";
 
 const steps = [
   {
-    label: <h4>Tours</h4>,
+    label: <h4>02-Tours</h4>,
     description: `set up the questions array as a state variable using the useState hook. This will allow you to modify the data and have those changes automatically reflected in the rendered output
     and use accordion style`,
     components: <TourMainComponent />,
   },
   {
-    label: <h4>Quiz</h4>,
+    label: <h4>3-Quiz</h4>,
     description: `set up the questions array as a state variable using the useState hook. This will allow you to modify the data and have those changes automatically reflected in the rendered output
     and use accordion style`,
     components: <MainQuiz />,
   },
   {
-    label: <h4>review</h4>,
+    label: <h4>4-review</h4>,
     description: `we have list of items and we want to only display one person at a time,And we also have this option to pick the random one.`,
     components: <MainReview />,
   },
   {
-    label: <h4>Menu</h4>,
+    label: <h4>5-Menu</h4>,
     description: ``,
     components: <MenuMain />,
   },
   {
-    label: <h4>paragraph generator</h4>,
+    label: <h4>6-Tabs</h4>,
+    description: ``,
+    components: <MenuMain />,
+  },
+  {
+    label: <h4>7-Slider</h4>,
+    description: ``,
+    components: <MainCarousel />,
+  },
+  {
+    label: <h4>8-paragraph generator</h4>,
     description: `For each ad campaign that you create, you can control how much
               you're willing to spend on clicks and conversions, which networks
               and geographical locations you want your ads to show on, and more.`,
@@ -52,14 +63,14 @@ const steps = [
     components: <Paragraph />,
   },
   {
-    label: <h4>Color Generator </h4>,
+    label: <h4>9-Color Generator </h4>,
     description:
       "An ad group contains one or more ads which target a shared set of keywords.",
 
     components: <MainColorComponent />,
   },
   {
-    label: <h4>Grocery</h4>,
+    label: <h4>10-Grocery</h4>,
     description: `Try out different ad text to see what brings in the most customers,
               and learn how to enhance your ads using features like ad extensions.
               If you run into any problems with your ads, find out how to tell if
